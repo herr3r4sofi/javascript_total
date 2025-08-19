@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Audio 1</title>
+</head>
+
+<body>
+
+    <audio id="audioPantera" controls>
+        <source src="audio/audioPantera" type="audio/mpeg">
+    </audio>
+
+    <button onclick="comenzarAudio()">click aqui</button>
+    <h1>Pantera rosa</h1>
+
+    <script>
+
+        let elementoAudioPantera = document.getElementById("audioPantera");
+
+        function comenzarAudio() {
+            elementoAudioPantera.play();
+        }
+    </script>
+</body>
+
+</html>
