@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(200, 219, 243);
+    color: rgb(0, 0, 0);
+    text-align: left;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.bt {
+    background-color: rgb(151, 229, 235);
+    width: 10%;
+    height: 40px;
+    border-color: rgb(96, 177, 231);
+    border-style:groove;
+}
+
+#Tiempo {
+    text-align: center;
+    color: rgb(51, 148, 228);
+}

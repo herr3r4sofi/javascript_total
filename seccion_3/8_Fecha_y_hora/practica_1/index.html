@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha y hora 2</title>
+</head>
+<body>
+    <button onclick="mostrarFecha()">Ver fecha</button>
+
+    <script>
+        function mostrarFecha(){
+            const fechaActual = new Date();
+            const fecha = fechaActual.toLocaleDateString('es-Es'); 
+            alert("La fecha de hoy es: " + fecha)
+        }
+    
+    </script>
+</body>
