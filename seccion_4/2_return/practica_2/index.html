@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+</head>
+<body>
+    <button onclick="mostrarFecha()">Fecha</button>
+    <script>
+
+        function mostrarFecha() {
+            alert(obtenerFecha());
+        }
+
+        function obtenerFecha() {
+            let fechaActual = new Date();
+            return fechaActual.toLocaleDateString('es-ES');
+        }
+    </script>
+</body>
+</html>
