@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: rgb(250, 226, 198);
+}
+
+.Titulos {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: serif;
+}
+
+.Containers {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    display: inline-block
+}
+
+.Botones {
+    width: 12%;
+    height: 40px;
+    padding: 7px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#Contenido {
+    background-color: rgb(255, 255, 255);
+    padding: 17px;
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}

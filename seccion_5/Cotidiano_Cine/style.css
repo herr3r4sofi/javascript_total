@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 229, 181);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.Botones {
+    background-color: rgb(230, 171, 62);
+    border-color: black;
+    width: 17%;
+    height: 20%;
+    color: rgb(0, 0, 0);
+    padding: 13px;
+}
+
+.edad-label {
+    display: inline-block;
+    margin-right: 5px; /
+}
+
+#Edad {
+    width: 40px;
+    height: 20px;
+}

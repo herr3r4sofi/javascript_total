@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculadora</title>
+    <script src="Script.js" defer></script>
+</head>
+
+<body>
+    <!--Titulo-->
+    <h1 class="Titulos">Calculadora</h1>
+    <br>
+    <!--Cuadros de numeros-->
+    <input type="number" class="Containers" id="Numero1"> <input type="number" class="Containers" id="Numero2">
+    <br>
+    <br>
+    <!--Signos de suma, resta, multiplicacon y division-->
+    <button onclick="hacerSuma()" style="width: 7%; height: 35px; border-radius: 5px; padding: 10px;">+</button>
+    <button onclick="hacerResta()" style="width: 7%; height: 35px; border-radius: 5px; padding: 10px;">-</button>
+    <button onclick="hacerMultiplicacion()"
+        style="width: 7%; height: 35px; border-radius: 5px; padding: 10px;">x</button>
+    <button onclick="hacerDivision()" style="width: 7%; height: 35px; border-radius: 5px; padding: 10px;">/</button>
+    <br>
+    <br>
+    <!--Raiz y potencia-->
+    <button onclick="hacerRaiz()" class="Botones">Raiz</button>
+    <button onclick="hacerPotencia()" class="Botones">Potencia</button>
+    <br>
+    <br>
+    <!--Absoluto y random-->
+    <button onclick="numeroAbsoluto()" class="Botones">Absoluto</button>
+    <button onclick="numeroAleatorio()" class="Botones">Random</button>
+    <br>
+    <!--Titulo-->
+    <h1 class="Titulos">Resultado</h1>
+    <!--Cuadro de numeros-->
+    <div id="Contenido"></div>
+    <br>
+    <!--Round, floor y ceil-->
+    <button onclick="redondearCercano()" class="Botones">Round</button>
+    <button onclick="redondearAbajo()" class="Botones">Floor</button>
+    <button onclick="redondearArriba()" class="Botones">Ceil</button>
+</body>
+
+</html>
