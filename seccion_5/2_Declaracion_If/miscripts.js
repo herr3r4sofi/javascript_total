@@ -5,6 +5,6 @@ function evaluarCompra(cantidadDisponible) {
     let cantidadComprada = elementoCantidad.value;
  
     if (cantidadComprada < cantidadDisponible) {
-        elementoRespuestas.textContent = "Compraste " + cantidadComprada + " hay disponible aun "  + (cantidadDisponible - parseInt (cantidadComprada)).toString();;
+        elementoRespuestas.textContent = "Compraste " + cantidadComprada + " hay disponible aún "  + (cantidadDisponible - parseInt (cantidadComprada)).toString();;
     }
 }

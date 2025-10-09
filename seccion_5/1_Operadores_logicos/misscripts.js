@@ -8,7 +8,7 @@ function calcular() {
 
     let puedeBeber = edad >= 18;
     elementoRespuesta1.textContent = puedeBeber;
- 
+
     let puedeIngresar = edad >= 18 && edad <= 30;
     elementoRespuesta2.textContent = puedeIngresar;
  

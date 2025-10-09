@@ -1,5 +1,5 @@
 function verificar() {
-    let elementoRespuesta = document.getElementById("decision");
+    let elementoRespuesta = document.getElementById("desicion");
 
     let elementoEdad = document.getElementById("textoEdad");
     let edad = parseInt(elementoEdad.value);
