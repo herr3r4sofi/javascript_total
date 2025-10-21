@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let miArray = [9, 5, 6, 2, 7];
+
+        function testLoop() {
+            for (let numero of miArray) {
+                if (numero <= 5) {
+                    continue;
+                }
+                console.log(numero);
+            }
+        }
+        testLoop();
+    </script>
+</body>
+
+</html>
