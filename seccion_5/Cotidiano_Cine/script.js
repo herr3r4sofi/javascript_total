@@ -68,6 +68,6 @@ function Pelicula(Genero) {
 
 
 function reiniciarRecomendacion() {
-    elementoEdad.value = ""; // 
+    elementoEdad.value = ""; 
     elementoTexto.textContent = "Recomendación: "; 
 }
