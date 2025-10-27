@@ -6,7 +6,6 @@ const resultadoPromedio = document.getElementById('resultadoPromedio');
 const resultadoNotaAlta = document.getElementById('resultadoNotaAlta');
 const resultadoAplazados = document.getElementById('resultadoAplazados');
 
-
 function listarNotas() {
     elementoLista.innerHTML = ""; 
     
@@ -18,53 +17,25 @@ function listarNotas() {
     
     elementoLista.innerHTML = listaHTML;
     
-    resultadoPromedio.textContent = "Resultado del promedio: ";
-    resultadoNotaAlta.textContent = "Resultado de la nota más alta: ";
-    resultadoAplazados.textContent = "Resultado de la consulta: ";
+    resultadoPromedio.textContent = "Resultado: ";
+    resultadoNotaAlta.textContent = "Resultado: ";
+    resultadoAplazados.textContent = "Resultado: ";
 }
 
 function calcularPromedio() {
-    let suma = 0;
-    
-    for (let i = 0; i < notas.length; i++) {
-        suma = suma + notas[i]; 
-    }
-    
-    const promedio = suma / notas.length;
-    
-    const promediO = Math.round(promedio * 10) / 10;
-    
-    resultadoPromedio.textContent = "Resultado del promedio: " + promediO;
+    const promedio = notas.reduce((suma, nota) => suma + nota, 0) / notas.length;
+    const redondeado = Math.round(promedio * 10) / 10;
+    resultadoPromedio.textContent = "Resultado: " + redondeado;
 }
 
 function notaMasAlta() {
-    let notaMaxima = notas[0];
-    
-    for (let i = 1; i < notas.length; i++) {
-        if (notas[i] > notaMaxima) {
-            notaMaxima = notas[i]; 
-        }
-    }
-    
-    resultadoNotaAlta.textContent = "Resultado de la nota más alta: " + notaMaxima;
+    const notaMaxima = Math.max(...notas);
+    resultadoNotaAlta.textContent = "Resultado: " + notaMaxima;
 }
 
 function hayAplazados() {
-    let hayAplazo = false;
-    
-    for (let i = 0; i < notas.length; i++) {
-        if (notas[i] < notaMi) {
-            hayAplazo = true; 
-            break; 
-        }
-    }
-    
-    let mensaje = "No"; 
-    
-    if (hayAplazo === true) {
-        mensaje = "Sí";
-    }
-    
+    const hayAplazo = notas.some(nota => nota < notaMinima);
+    const mensaje = hayAplazo ? "Sí" : "No";
     resultadoAplazados.textContent = "Resultado: " + mensaje;
 }
 
