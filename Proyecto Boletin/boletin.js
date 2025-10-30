@@ -4,7 +4,7 @@ const notaMinima = 4;
 const elementoLista = document.getElementById('listaNotas');
 const resultadoPromedio = document.getElementById('resultadoPromedio');
 const resultadoNotaAlta = document.getElementById('resultadoNotaAlta');
-const resultadoAplazados = document.getElementById('resultadoAplazados');
+const resultadoAplazados = document.getElementById(' ');
 
 function listarNotas() {
     elementoLista.innerHTML = ""; 

@@ -11,18 +11,14 @@
         <h1>Mini Facturación Manual</h1>
         <h3>Nombre del cliente:</h3>
         <input type="text" id="cliente">
-        <br>
+        <p id="nombre"></p>
+        
 
         <h2>Agregar Productos</h2>
         <input type="text" id="Productos">
-
-        <input type="number" id="precioProducto">
-
-        <input type="number" id="cantidadProducto">
-
-
+        <input type="number" id="precio">
+        <input type="number" id="cantidad">
         <button onclick="agregar()">Agregar</button>
-        <ul id="listaProductos"></ul>
         <br>
 
         <h3>Descuento (%)</h3>
@@ -32,7 +28,7 @@
         <input type="text" id="impuesto">
 
         <h2>Detalle de Productos</h2>
-        <ul id="detalle"></ul>
+        <ul id="lista"></ul>
 
         <button onclick="factura()">Generar Factura</button>
 
